@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let number = +prompt("Nhập vào số muốn tính giai thừa");
+
+    function facrorial(facrorialNumber) {
+        var giaithua = 1;
+        if (facrorialNumber == 0) {
+            return giaithua = 1;
+        } else {
+            for (let i = 2; i <= facrorialNumber; i++) {
+                giaithua *= i;
+            }
+        }
+        return giaithua;
+    }
+
+    alert("giai thừa của " + number + " là :" + facrorial(number));
+
+
+</script>
+</html>

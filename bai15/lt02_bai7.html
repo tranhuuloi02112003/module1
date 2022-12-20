@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    do {
+        let number1=+prompt("Nhập vào số nguyên thứ nhất");
+
+    }while(number1%1!=0);
+    do {
+        let number2=+prompt("Nhập vào số nguyên thứ hai");
+
+    }while(number2%1!=0);
+    function doicho(a,b) {
+        let temp=a;
+        a=b;
+        b=temp;
+        alert("Number1:"+a+"Number2:"+b)
+    }
+    doicho(number1,number2);
+
+</script>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr=[];
+    let vt=0;
+    for (let i = 0; i < 3; i++) {
+        arr[i]=+prompt("Elenment "+i+":");
+    }
+    let somuontim=+prompt("Nhập vào số muốn xóa:");
+    for (let i = 0; i < 3; i++) {
+        if (somuontim==arr[i]){
+            vt=i;
+            arr.splice(vt,1);
+            arr.push(0);
+            i--;
+        }
+    }
+    if (vt==0){
+        document.write( somuontim+" không có trong mảng")
+    }else {
+        document.write(arr);
+
+    }
+
+
+</script>
+</html>

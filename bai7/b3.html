@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="a">
+<input type="number" id="b"><br>
+<button onclick="cong()">Addition(+)</button>
+<button onclick="tru()">Subtraction(-)</button>
+<button onclick="nhan()">Multiplication(X)</button>
+<button onclick="chia()">Division(/)</button>
+
+<script !src="">
+    function cong() {
+        let gt1=+document.getElementById("a").value;
+        let gt2=+document.getElementById("b").value;
+        let tong=gt1+gt2;
+        alert(tong);
+    }
+
+    function tru() {
+        let gt1=+document.getElementById("a").value;
+        let gt2=+document.getElementById("b").value;
+        let tru=gt1-gt2;
+        alert(tru);
+    }
+
+    function nhan() {
+        let gt1=+document.getElementById("a").value;
+        let gt2=+document.getElementById("b").value;
+        let nhan=gt1*gt2;
+        alert(nhan);
+    }
+
+    function chia() {
+        let gt1=+document.getElementById("a").value;
+        let gt2=+document.getElementById("b").value;
+        let chia=gt1/gt2;
+        alert(chia);
+    }
+</script>
+</body>
+</html>

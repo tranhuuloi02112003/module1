@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    /*Bậc 1: 4 triệu đồng/tháng 0%;
+    Bậc 2: Trên 4 - 6  đồng/tháng: 5%;
+    Bậc 3: Trên 6 - 9  đồng: 10%;
+    Bậc 4: Trên 9 - 14  đồng/tháng: 15%;
+    Bậc 5: trên 14 - 24  đồng/tháng: 20%;
+    Bậc 6: Trên 24 - 44  đồng/tháng: 25%;
+    Bậc 7: Trên 44 - 84  đồng/tháng: 30%;
+    Bậc 8: Trên 84 triệu đồng: 35%.*/
+    let thunhap;
+    let thue;
+    do {
+        thunhap = +prompt("Nhập thu nhập 1 tháng:");
+        if (isNaN(kwh)) {
+            kwh = +prompt("Vui lòng nhập lại thu nhập trong 1 tháng của bạn:");
+        }
+    } while (isNaN(kwh));
+    if (thunhap < 4) {
+        thue = 0;
+    } else if (thunhap <= 6) {
+        thue = thunhap * (5 / 100);
+    } else if (thunhap <= 9) {
+        thue = thunhap * (10 / 100);
+    } else if (thunhap <= 14) {
+        thue = thunhap * (15 / 100);
+    } else if (thunhap <= 24) {
+        thue = thunhap * (20 / 100);
+    } else if (thunhap <= 44) {
+        thue = thunhap * (25 / 100);
+    } else if (thunhap <= 84) {
+        thue = thunhap * (30 / 100);
+    } else {
+        thue = thunhap * (35 / 100)
+    }
+
+</script>

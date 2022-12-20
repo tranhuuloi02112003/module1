@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Hiển thị ra 20 số trong dãy fibonacci đầu tiên.
+    var dem=0;
+    var a=0;
+    var b=1;
+    document.write(a+"&nbsp"+b+"&nbsp");
+    while(dem<=18){
+        let s=a+b;
+        document.write(s+"&nbsp");
+        a=s;
+        if (a>b){
+            let temp=a;
+            a=b;
+            b=temp;
+        }
+        dem++;
+
+    }
+    /*let f0 = 0;
+    let f1 = 1;
+    for (let i = 0; i <= 20; i++) {
+        document.write(f0 + "<br>")
+        const tmp = f0;
+        f0 = f1;
+        f1 = tmp + f1;
+    }*/
+</script>
+</body>
+</html>

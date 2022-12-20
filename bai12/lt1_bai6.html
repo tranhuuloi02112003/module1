@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr=[];
+    let count=0;
+    for (let i = 0; i < 10; i++) {
+        arr[i]=+prompt("Elenment "+i+":");
+    }
+    let somuontim=+prompt("Nhập vào số muốn tìm:");
+    for (let i = 0; i < 10; i++) {
+        if (somuontim==arr[i]){
+            count++;
+            break;
+        }
+    }
+    if (count==0){
+        document.write( somuontim+" is in the array")
+    }else{
+        document.write( somuontim+" is not in the array")
+
+    }
+</script>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let a=+prompt("Nhập vào cạnh a:");
+    let b=+prompt("Nhập vào cạnh b:");
+    let c=+prompt("Nhập vào cạnh c:");
+    if (!isNaN(a) && !isNaN(b) && !isNaN(c) && a>0 && b>0 && c>0 && a+b>c && b+c>a && a+c>b){
+        alert("3 cạnh vừa nhập là 3 cạnh của tam giác");
+    }else {
+        alert("3 cạnh vừa nhập không phải 3 cạnh của tam giác");
+    }
+
+</script>

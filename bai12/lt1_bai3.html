@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let soluong=+prompt("Nhập sl element trong mảng:");
+    let number=[];
+    let medium=0;
+    let max=0;
+    for (let i = 0; i < soluong; i++) {
+        number[i]=+prompt("Element "+i);
+        if (number[i]>max){
+            max=number[i];
+        }
+        medium+=number[i];
+    }
+
+
+    document.write("Giá tri max trong mảng là:"+max+"<br>");
+    document.write("Giá trị medium là:"+medium/soluong);
+
+
+</script>
+</html>

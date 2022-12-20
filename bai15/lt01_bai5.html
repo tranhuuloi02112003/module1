@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr1=['Polaris','Aldebaran','Deneb','Vega','Altair','Dubhe ','Regulus'];
+    let arr2=['Ursa Minor','Tarurus','Cygnus','Lyra','Aquila','Ursa Major  ','Leo'];
+    let str =prompt("Nhập vào ngôi sao cần tìm:");
+    function timngoisao(str1) {
+        let count=0;
+        for (let i = 0; i < arr1.length; i++) {
+            if (arr1[i]==str1){
+             alert(arr2[i]);
+             count++;
+             break;
+            }
+        }
+        if (count==0) {
+            alert("không có tên ngôi sao vừa nhập trong mảng");
+        }
+    }
+    timngoisao(str);
+
+</script>
+</html>

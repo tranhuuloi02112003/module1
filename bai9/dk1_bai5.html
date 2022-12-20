@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let diemkt=+prompt("Nhập điểm kiểm tra:")
+    let diemgk=+prompt("Nhập điểm giữa kì:")
+    let diemck=+prompt("Nhập điểm cuối kì:")
+    let trungbinh=(diemck+diemgk+diemkt)/3;
+    document.write(trungbinh)
+    if (trungbinh>=9){
+        document.write("Hạng A")
+    }else if(trungbinh>=7){
+        document.write("Hạng B")
+
+    }else if (trungbinh>=5){
+        document.write("Hạng C")
+    }else{
+        document.write("Hạng D")
+    }
+
+</script>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let sophut = +prompt("Nhập số phút đã sử dụng:");
+    let phi;
+    if (sophut > 200)
+
+        phi = (sophut - 200) * 200 + 150 * 400 + 50 * 600;
+
+    else if (sophut > 150) {
+        phi = (sophut - 50) * 400 + 50 * 600;
+
+    } else {
+        phi = sophut * 600;
+    }
+    document.write("Số tiền phải trả:"+phi);
+
+</script>

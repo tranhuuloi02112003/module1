@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr=[];
+    let count=0;
+    let soluong=+prompt("Nhập sl pt trong mảng:")
+    for (let i = 0; i < soluong; i++) {
+        arr[i]=+prompt("Element "+i+":");
+        if (arr[i]<0){
+            count++;
+        }
+    }
+    document.write("Mảng có "+count+" số nguyên âm");
+
+</script>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let danhthu = +prompt("Nhập mức danh thu:");
+    let hoahong;
+    if (danhthu > 300) {
+        hoahong = danhthu * (20 / 100);
+    } else if (danhthu <=300 && danhthu>100) {
+        hoahong = danhthu * (10 / 100);
+    } else {
+        hoahong = danhthu * (5 / 100);
+    }
+    document.write("Hoa hồng:" + hoahong);
+
+</script>

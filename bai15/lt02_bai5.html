@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let number1=+prompt("Nhập vào số nguyên thứ nhất");
+    let number2=+prompt("Nhập vào số nguyên thứ hai");
+    let number3=+prompt("Nhập vào số nguyên thứ ba");
+    function compare(number1,number2,number3) {
+        let min=number1;
+        if (min>number2){
+            min=number2;
+        }
+        if (min>number3){
+            min=number3;
+        }
+        return min;
+
+    }
+    alert("Giá trị nhỏ nhất trong 3 số vừa nhập là:"+compare(number1,number2,number3));
+</script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let money;
+    let month;
+    let profit = 0;
+    do {
+        money = +prompt("số tiền bạn muốn gửi vào ngân hàng:");
+        if (money<0){
+            alert("Bạn đã nhập sai.Nhập lại !");
+        }
+    } while (money < 0);
+    do {
+        month = +prompt("số tháng bạn muốn gửi vào ngân hàng:");
+        if (month<0){
+            alert("Bạn đã nhập sai.Nhập lại !");
+        }
+    } while (month < 0);
+     let sum = money;
+    for (let i = 1; i <= month; i++) {
+        profit = sum * 0.12;
+        sum = money + profit;
+    }
+    document.write("tiền lãi sau " + month + " month là:" + sum);
+</script>
+</body>
+</html>

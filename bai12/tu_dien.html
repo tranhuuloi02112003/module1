@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="english" >
+<input type="button" value="Dịch" onclick="dich()">
+<script>
+    function dich(){
+        let vietnamse=["lợi","trần","tiếng anh","mèo","chó","heo"];
+        let english=["loi","tran","english","cat","dog","pig"];
+        let nhap=document.getElementById("english").value;
+        if(english.indexOf(nhap) !==-1){
+            alert(vietnamse[english.indexOf(nhap)]);
+        }else{
+            alert("Chưa có trong từ điển");
+        }
+    }
+
+
+
+</script>
+</body>
+</html>

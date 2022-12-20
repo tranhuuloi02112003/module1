@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let soluong=+prompt("Nhập sl element trong mảng:");
+    let number=[];
+    let daonguoc=[];
+    for (let i = 0; i < soluong; i++) {
+        number[i]=+prompt("Element "+i);
+    }
+    let final=number.length-1;
+    document.write("Mảng sau khi đảo ngược:");
+
+    for (let i = 0; i < soluong; i++,final--) {
+        daonguoc[i]= number[final];
+        document.write(daonguoc[i]+"&nbsp");
+    }
+
+</script>
+</html>

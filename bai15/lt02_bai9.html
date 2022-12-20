@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let arr = ['a', '2', '@', '!', 'a', 'b'];
+    let char = prompt("Nhập vào 1 kí tự:");
+    let count = 0;
+
+    function search(arr, char) {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] == char) {
+                count++;
+            }
+        }
+        if (count==0){
+            document.write("-1");
+
+        }else {
+            document.write("Xuất hiện " + count+" lần ");
+        }
+    }
+    search(arr,char);
+
+
+
+</script>
+</html>

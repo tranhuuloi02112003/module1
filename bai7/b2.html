@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="">
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Curency</th>
+            <th>To Curency</th>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" style="width: 110px" id="dauvao">
+            </td>
+            <td>
+                <select name="from" id="select1">
+                    <option value="a">Việt Nam</option>
+                    <option value="b">USD</option>
+                </select>
+            </td>
+            <td>
+                <select name="to" id="select2">
+                    <option value="b">USD</option>
+                    <option value="a">Việt Nam</option>
+                </select>
+            </td>
+            <td>
+                <button onclick="doiTien()">Convert</button>
+            </td>
+        </tr>
+    </table>
+    <script !src="">
+        function doiTien() {
+            let giaTriVao=+document.getElementById("dauvao").value;
+            let select1=+document.getElementById("select1").value;
+            let select2=+document.getElementById("select2").value;
+            if (select1==select2){
+                alert(giaTriVao);
+            }
+            if (select1=="a" && select2=="b"){
+                alert(giaTriVao/24000);
+            }
+            if (select1=="b" && select2=="a"){
+                alert(giaTriVao*24000);
+            }
+        }
+    </script>
+</form>
+</body>
+</html>

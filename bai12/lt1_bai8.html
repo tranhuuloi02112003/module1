@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 3; i++) {
+        arr[i] = +prompt("Elenment " + i + ":");
+    }
+    document.write(arr.sort(function (a,b) {
+        return b-a;
+    }));
+</script>
+
+</html>
