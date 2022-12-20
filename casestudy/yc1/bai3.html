@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let chieucao = +prompt("Nhập chiều cao tam giác cân:");
+
+    for (let i = 1; i <= chieucao; i++) {
+        // vong for dieu khien cac khoang trong
+        for (let j = 1; j <= chieucao - i; j++) {
+            document.write("&nbsp&nbsp");
+        }
+        // vong for de in dau sao
+        for (let j = 1; j <= 2 * i - 1; j++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+
+</script>
+</html>

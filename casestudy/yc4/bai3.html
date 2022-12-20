@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let s1="aabcc";
+    let s2="adcaa";
+    let temps2=[];
+    let count=0;
+
+    for (let i = 0; i <s2.length ; i++) {
+        temps2.push(s2[i]);
+    }
+
+    for (let i = 0; i < s1.length; i++) {
+        for (let j = 0; j < temps2.length; j++) {
+            if (s1[i]==temps2[j]){
+                temps2.splice(j,1);
+                count++;
+                break;
+            }
+        }
+    }
+
+    alert(count);
+
+</script>
+</html>

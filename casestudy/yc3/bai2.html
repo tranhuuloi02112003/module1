@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let a=[7,2,5,3,5,3];
+    let b=[7,2,5,4,6,3,5,3];
+    let c=[];
+    let count;
+    if (a.length>b.length){
+        for (let i = 0; i <a.length ; i++) {
+            count=0;
+            for (let j = 0; j < b.length; j++) {
+                if (a[i]==b[j]){
+                    count=1;
+                }
+            }
+            if (count==0){
+                c.push(a[i]);
+            }
+        }
+        alert(c);
+    }else{
+        for (let i = 0; i <b.length ; i++) {
+            count=0;
+            for (let j = 0; j < a.length; j++) {
+                if (b[i]==a[j]){
+                    count=1;
+                }
+            }
+            if (count==0){
+                c.push(b[i]);
+            }
+        }
+        alert(c);
+    }
+
+
+</script>
+
+</html>

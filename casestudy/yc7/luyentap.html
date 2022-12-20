@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<lable>Tên <input type="text" id="name"></lable>
+<lable>Tuổi <input type="text" id="age"></lable>
+<lable>Lớp <input type="text" id="className"></lable>
+<button onclick="add()">Thêm mới</button>
+<p id="display"></p>
+<body>
+<script>
+    class students {
+        constructor(name, age, className) {
+            this.name = name;
+            this.age = age;
+            this.className = className;
+        }
+
+        setName(name) {
+            this.name = name;
+        }
+
+        setAge(age) {
+            this.age = age;
+        }
+
+        setClassName(className) {
+            this.className = className;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        getAge() {
+            return this.age;
+        }
+
+        getClassName() {
+            return this.className;
+        }
+    }
+
+    let st=new students("loi",11,"tmp15");
+    let arr = [st];
+
+
+    function dislay(arr) {
+        let str = "<table border=\"1\">\n" +
+            "    <tr>\n" +
+            "        <td>STT</td>\n" +
+            "        <td>Name</td>\n" +
+            "        <td>Age</td>\n" +
+            "        <td>ClassName</td>\n" +
+            "        <td colspan='2'> Chức năng</td>\n" +
+            "    </tr>";
+        for (let i = 0; i < arr.length; i++) {
+            str += "<tr>" +
+                "<td>" + (i + 1) + "</td>" +
+                "<td>" + arr[i].getName() + "</td> " +
+                "<td>" + arr[i].getAge() + "</td> " +
+                "<td>" + arr[i].getClassName() + "</td> " +
+                "<td> <button onclick='edit("+i+")'>Sửa</button></td> " +
+                "<td> <button onclick='remove("+i+")'>Xóa</button></td> " +
+                    "</tr>";
+        }
+        str+="</table>";
+        document.getElementById("display").innerHTML=str;
+    }
+    dislay(arr);
+    function add() {
+        let name=document.getElementById("name").value;
+        let age=document.getElementById("age").value;
+        let className=document.getElementById("className").value;
+        let newStudens= new students(name,age,className);
+        arr.push(newStudens);
+        dislay(arr);
+    }
+
+</script>
+</body>
+</html>

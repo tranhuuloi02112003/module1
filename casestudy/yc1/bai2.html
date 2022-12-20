@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    //vẽ tam giác vuông cân rỗng ruột
+    let chieucao = +prompt("Nhập chiều cao tam giác vuông:");
+    let temp = chieucao;
+
+    for (let i = 1; i <= chieucao; i++) {
+        for (let j = 1; j <= i; j++) {
+            if ( i==chieucao || i==j ||j==1){
+                document.write("*");
+            }else {
+                document.write("&nbsp&nbsp")
+            }
+        }
+        document.write("<br>");
+    }
+
+</script>
+</html>

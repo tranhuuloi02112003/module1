@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let chon;
+    let chonsoluong;
+    do {
+         chon=+prompt("Chọn menu:\n1/Cafe\n2/Cam vắt\n3/Nước ép cà rốt\n4/Nước ép cà chua" +
+            "\n5/Nước lọc\n6/Nước dừa\n7/Thoát chương trình");
+        switch (chon) {
+            case 1:
+                chonsoluong=+prompt("Đơn giá cafe:15k\nChọn số lượng");
+                alert("Tổng tiền phải trả:"+(15000*chonsoluong));
+                break;
+            case 2:
+                chonsoluong=+prompt("Đơn giá Cam vắt:20k\nChọn số lượng");
+                alert("Tổng tiền phải trả:"+(20000*chonsoluong));
+                break;
+            case 3:
+                chonsoluong=+prompt("Đơn giá nước ép cà rốt:20k\nChọn số lượng");
+                alert("Tổng tiền phải trả:"+(20000*chonsoluong));
+                break;
+            case 4:
+                chonsoluong=+prompt("Đơn giá Nước ép cà chua:25k\nChọn số lượng");
+                alert("Tổng tiền phải trả:"+(25000*chonsoluong));
+                break;
+            case 5:
+                chonsoluong=+prompt("Đơn giá Nước lọc:5k\nChọn số lượng");
+                alert("Tổng tiền phải trả:"+(5000*chonsoluong));
+                break;
+            case 6:
+                chonsoluong=+prompt("Đơn giá Nước dừa:10k\nChọn số lượng");
+                alert("Tổng tiền phải trả:"+(10000*chonsoluong));
+                break;
+        }
+    }while(chon!=7);
+
+
+</script>
+</html>

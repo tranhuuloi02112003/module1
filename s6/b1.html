@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<select id="mySelect" onchange="do_something()">
+
+    <option value="con heo">con heo</option>
+    <option value="con bo">con bo</option>
+    <option value="con khi">con khi</option>
+</select>
+
+</body>
+</html>
+<script>
+    function do_something() {
+        var selecteadValue=document.getElementById("mySelect").value;
+        alert(selecteadValue);
+
+    }
+
+</script>
+<!--<script>-->
+<!--    debugger-->
+<!--    var a=2;-->
+<!--    var b=3;-->
+<!--    var total=a+b;-->
+<!--    document.getElementById("total").innerHTML=total;-->
+
+<!--</script>-->

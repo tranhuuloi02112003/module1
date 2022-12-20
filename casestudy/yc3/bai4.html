@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    var temp;
+    let a=[];
+    var import1=+prompt("Nhập vào 1 số nguyên:");
+    while(import1!=0){
+        temp=import1%10;
+        import1=Math.floor(import1/10);
+        switch (temp) {
+            case 0:
+                a.unshift("không ")
+                continue;
+            case 1:
+                a.unshift("một ")
+                continue;
+            case 2:
+                a.unshift("hai ")
+                continue;
+            case 3:
+                a.unshift("ba ")
+                continue;
+            case 4:
+                a.unshift("bốn ")
+                continue;
+            case 5:
+                a.unshift("năm ")
+                document.write("năm ")
+                continue;
+            case 6:
+                a.unshift("sáu ")
+                continue;
+            case 7:
+                a.unshift("bảy ")
+                continue;
+            case 8:
+                a.unshift("tám ")
+                continue;
+            case 9:
+                a.unshift("chín ")
+                continue;
+        }
+    }
+    for (let i = 0; i < a.length; i++) {
+        document.write(a[i]);
+    }
+
+
+
+
+
+</script>
+</html>

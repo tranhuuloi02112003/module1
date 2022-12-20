@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+<lable>Tên</lable>
+    <input type="text" id="name"><br>
+<lable>Tuổi</lable>
+    <input type="number" id="age"><br>
+<lable>Lớp</lable>
+    <input type="text" id="className"><br>
+<button onclick='addArr()'>Thêm mới học viên</button>
+
+<p id="result"></p>
+</body>
+<script>
+    class Studen {
+        constructor(name, age, className) {
+            this.name = name;
+            this.age = age;
+            this.className = className;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        setName(value) {
+            this.name = value;
+        }
+
+        getAge() {
+            return this.age;
+        }
+
+        setAge(value) {
+            this.age = value;
+        }
+
+        getClassName() {
+            return this.className;
+        }
+
+        setClassName(value) {
+            this.className = value;
+        }
+
+    }
+
+    // let studen1 = new Studen("loi", 19, "A0922I1");
+    // let studen2 = new Studen("nhi", 19, "A0922I1");
+    // let arr = [studen1, studen2];
+    let arr = [];
+
+    function display(arr) {
+        let str = "<table border='1px'>\n" +
+            "    <tr>\n" +
+            "        <td>STT</td>\n" +
+            "        <td>Tên</td>\n" +
+            "        <td>Tuổi</td>\n" +
+            "        <td>Lớp</td>\n" +
+            "<td colspan='2'> Chức năng</td>" +
+            "    </tr>";
+        for (let i = 0; i < arr.length; i++) {
+            str += "<tr> " +
+                "<td>" + (i + 1) + "</td>" +
+                "<td>" + arr[i].getName() + "</td>" +
+                "<td>" + arr[i].getAge() + "</td>" +
+                "<td>" + arr[i].getClassName() + "</td>" +
+                "<td><button id='edit' onclick='edit(" + (i) + ")'>Sửa</button></td>" +
+                "<td><button id='remove' onclick='remove(" + (i) + ")'>Xóa</button></td>";
+        }
+        str += "</table>";
+        document.getElementById("result").innerHTML = str;
+    }
+
+    display(arr);
+
+    function addArr() {
+        let ten = document.getElementById("name").value;
+        let tuoi = document.getElementById("age").value;
+        let lop = document.getElementById("className").value;
+        let newStuden = new Studen(ten, tuoi, lop);
+        arr.push(newStuden);
+        display(arr);
+    }
+
+    function remove(i) {
+        arr.splice(i, 1);
+        display(arr);
+    }
+
+    function edit(i) {
+        let name = prompt("Nhập tên học viên: ");
+        let age = +prompt("Nhập tuổi học viên: ");
+        let className = prompt("Nhập lớp học viên: ");
+        arr[i].setName(name);
+        arr[i].setAge(age);
+        arr[i].setClassName(className);
+        alert("Thay đổi thông tin thành công");
+        display(arr);
+    }
+
+</script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let numerators=[5,2,5];
+    let denominators=[5,3,4];
+    let temp=[];
+
+
+    for (let i = 0; i < numerators.length; i++) {
+            temp[i]=numerators[i]/denominators[i];
+    }
+    let max=temp[0];
+    for (let i = 0; i < temp.length; i++) {
+        if (max<temp[i]){
+            max=temp[i];
+        }
+    }
+    document.write(temp.indexOf(max));
+
+</script>
+
+</html>
