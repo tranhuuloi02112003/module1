@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>den_congtac</title>
+</head>
+<body>
+<script>
+    class Electriclamp {
+        constructor(status) {
+            this.status=status;
+        }
+        turnOff() {
+            this.status=false;
+        }
+        turnOn() {
+            this.status=true
+        }
+    }
+
+    class SwitchButon  {
+        constructor(status,lamp) {
+            this.status=status;
+            this.lamp=lamp;
+        }
+        ConectToLamp (a) {
+            a.status= this.status;
+        }
+        switchOff (){
+            this.status=false;
+            this.ConectToLamp(this.lamp);
+        }
+        switchOn () {
+            this.status=true;
+            this.ConectToLamp(this.lamp);
+        }
+    }
+    let a=new Electriclamp(false);
+    let b=new SwitchButon(false,a);
+    for(let i=1;i<=10;i++){
+        b.switchOn()
+        console.log("bat con tat lan thu",i)
+        b.switchOff()
+        console.log("tat con tat lan thu",++i)
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    class Animal{
+        constructor(name, speed) {
+            this.name = name;
+            this.speed = speed;
+        }
+    ​
+        setSpeed(value){
+            this.speed = value;
+        }
+    ​
+        getSpeed(){
+            return this.speed
+        }
+    ​
+        setName(value){
+            this.name = value;
+        }
+    ​
+        getName(){
+            return this.name;
+        }
+    }
+​
+    class Cat extends Animal{
+        constructor(name,speed,hairColor) {
+            super(name,speed);
+            this.hairColor = hairColor
+        }
+        setHairColor(value){
+            this.hairColor = value;
+        }
+        getHairColor(){
+            return this.hairColor;
+        }
+    }
+​
+    let animal = new Animal("Tom",10);
+    document.write("Animal: " + animal.getName() + ". Speed: " + animal.getSpeed() + "<br>");
+    let cat = new Cat("Moon",15,"yellow");
+    document.write("Cat: " + cat.getName() + ". Speed: " + cat.getSpeed()
+        + ". Hair color: " + cat.getHairColor());
+​
+    ​
+</script>
+</html>

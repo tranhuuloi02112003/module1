@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    class Temperature {
+        constructor(triSoC) {
+            this.triSoC = triSoC;
+        }
+
+        chuyenCSangF() {
+            return this.triSoC * 9 / 5 + 32;
+        }
+
+        chuyenCSangK() {
+            return this.triSoC + 273.15;
+        }
+
+        setDoC(doC) {
+            this.triSoC = doC;
+        }
+    }
+
+    let nhietDo = new Temperature(30);
+    nhietDo.setDoC(25);
+    document.write("Độ C sang F:" + nhietDo.chuyenCSangF() + "<br>");
+    document.write("Độ C sang K:" + nhietDo.chuyenCSangK());
+
+</script>
+</html>

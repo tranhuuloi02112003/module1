@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    class Rectangle {
+        constructor(dai, rong) {
+            this.dai = dai;
+            this.rong = rong;
+        }
+
+        dienTich() {
+            return this.dai * this.rong;
+        }
+
+        chuVi() {
+            return (this.dai + this.rong) * 2;
+        }
+
+        setRong(rong) {
+            this.rong = rong;
+        }
+
+        getRong() {
+            return this.rong;
+        }
+
+        setDai(dai) {
+            this.dai = dai;
+        }
+
+        getDai() {
+            return this.dai;
+        }
+
+    };
+
+    let hinhChuNhat = new Rectangle(2, 2);
+    let dai = +prompt("Nhập chiều dài:");
+    let rong = +prompt("Nhập chiều rộng:");
+    hinhChuNhat.setDai(dai);
+    hinhChuNhat.setRong(rong);
+    document.write("Dien tich HCN:" + hinhChuNhat.dienTich()+"<br>");
+    document.write("Chu vi HCN:" + hinhChuNhat.chuVi());
+
+
+</script>
+</html>

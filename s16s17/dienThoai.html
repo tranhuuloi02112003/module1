@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    class Mobile {
+        constructor(trangThaiPin, messageSoanThao, messageHopThuDen, messageDaGui) {
+            if (trangThaiPin <= 100) {
+                this.trangThaiPin = trangThaiPin;
+            } else {
+                this.trangThaiPin = +prompt("Nhập trạng thái Pin:");
+            }
+            this.messageSoanThao = messageSoanThao;
+            this.messageHopThuDen = messageHopThuDen;
+            this.messageDaGui = messageDaGui;
+        }
+        batTatDienThoai(trangThai){
+            return this.trangThai
+        }
+
+    }
+
+</script>
+</html>
